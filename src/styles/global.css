@@ -1,0 +1,70 @@
+/* Custom global styles */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Chip animation */
+.MuiChip-root {
+  transition: all 0.2s ease-in-out;
+}
+
+.MuiChip-root:hover {
+  transform: scale(1.05);
+}
+
+/* Button hover animation */
+.MuiButton-root {
+  transition: all 0.2s ease-in-out;
+}
+
+.MuiButton-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Better focus styles for accessibility */
+:focus {
+  outline: 2px solid #8187c4;
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
